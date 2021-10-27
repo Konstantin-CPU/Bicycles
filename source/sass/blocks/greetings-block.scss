@@ -1,0 +1,109 @@
+.greetings-block {
+  padding: 320px 0 240px;
+  background-image: url("../../img/bike.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+@media (min-resolution: 2dppx) {
+  .greetings-block {
+    background-image: url("../../img/bike-2x.jpg");
+  }
+}
+
+.greetings-block__wrapper {
+  width: 880px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.greetings-block__heading-block {
+  width: 385px;
+}
+
+.greetings-block__logo {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.greetings-block__heading {
+  font-size: 46px;
+  line-height: 64px;
+  color: $white;
+  margin-bottom: 25px;
+}
+
+.greetings-block__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  color: $white-08;
+}
+
+@media (max-width: $tablet-width) {
+  .greetings-block {
+    background: none;
+    padding: 0;
+  }
+
+  .greetings-block__wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .greetings-block__heading-block {
+    background-image: url("../../img/bike-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    padding-bottom: 80px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .greetings-block__heading-block {
+      background-image: url("../../img/bike-tablet-2x.jpg");
+    }
+  }
+
+  .greetings-block__logo {
+    margin: 25px 0 0 20px;
+  }
+
+  .greetings-block__text-block {
+    text-align: center;
+    padding-top: 85px;
+  }
+
+  .greetings-block__heading {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+
+  .greetings-block__text {
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .greetings-block__heading-block {
+    background-image: url("../../img/bike-mobile.jpg");
+    padding-bottom: 70px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .greetings-block__heading-block {
+      background-image: url("../../img/bike-mobile-2x.jpg");
+    }
+  }
+
+  .greetings-block__text-block {
+    padding: 70px 15px 0;
+  }
+}

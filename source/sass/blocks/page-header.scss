@@ -1,0 +1,128 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.page-header__wrapper {
+  width: 880px;
+  margin: 0 auto;
+}
+
+.page-header__navigation-list {
+  border-bottom: 1px solid $white-07;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px 10px;
+}
+
+.page-header__navigation-link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  color: $white-07;
+}
+
+
+.page-header__toggle {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: $green;
+    border: 0;
+    display: block;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 1px;
+      top: 15px;
+      right: 13px;
+      background-color: $black;
+      box-shadow: 0 7px 0 0 $black, 0 14px 0 0 $black;
+    }
+  }
+
+  .page-header__navigation {
+    &--closed {
+      .page-header__navigation-list {
+        display: none;
+      }
+    }
+
+    &--opened {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      .page-header__navigation-list {
+        width: 320px;
+        min-height: 568px;
+        background-color: $white;
+        flex-direction: column;
+        justify-content: start;
+        border: none;
+        padding: 100px 0 0;
+      }
+
+      .page-header__navigation-item {
+        position: relative;
+      }
+
+      .page-header__navigation-link {
+        font-weight: normal;
+        color: $second-grey;
+        background-color: $third-grey;
+        display: block;
+        padding: 15px;
+        margin-bottom: 30px;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 13px;
+          height: 8px;
+          top: 23px;
+          right: 25px;
+          background: url("../../img/icons/arrow.svg") no-repeat 50%;
+        }
+      }
+
+      .page-header__toggle {
+        background-color: $white;
+        z-index: 1;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 1px;
+          top: 25px;
+          right: 10px;
+          background-color: $toggle-color-2;
+          box-shadow: none;
+        }
+
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
