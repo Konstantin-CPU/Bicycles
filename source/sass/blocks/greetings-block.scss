@@ -1,6 +1,6 @@
 .greetings-block {
   padding: 320px 0 240px;
-  background-image: url("../../img/bike.jpg");
+  background-image: url("../img/bike.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -8,7 +8,7 @@
 
 @media (min-resolution: 2dppx) {
   .greetings-block {
-    background-image: url("../../img/bike-2x.jpg");
+    background-image: url("../img/bike-2x.jpg");
   }
 }
 
@@ -54,7 +54,7 @@
   }
 
   .greetings-block__heading-block {
-    background-image: url("../../img/bike-tablet.jpg");
+    background-image: url("../img/bike-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -64,7 +64,7 @@
 
   @media (min-resolution: 2dppx) {
     .greetings-block__heading-block {
-      background-image: url("../../img/bike-tablet-2x.jpg");
+      background-image: url("../img/bike-tablet-2x.jpg");
     }
   }
 
@@ -93,13 +93,13 @@
 
 @media (max-width: $mobile-width) {
   .greetings-block__heading-block {
-    background-image: url("../../img/bike-mobile.jpg");
+    background-image: url("../img/bike-mobile.jpg");
     padding-bottom: 70px;
   }
 
   @media (min-resolution: 2dppx) {
     .greetings-block__heading-block {
-      background-image: url("../../img/bike-mobile-2x.jpg");
+      background-image: url("../img/bike-mobile-2x.jpg");
     }
   }
 

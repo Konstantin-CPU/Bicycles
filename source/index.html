@@ -18,16 +18,29 @@
         <button class="page-header__toggle"><span class="visually-hidden">Открыть/закрыть меню</span></button>
         <ul class="page-header__navigation-list list">
           <li class="page-header__navigation-item">
-            <a href="#about-us" class="page-header__navigation-link link">О нас</a>
+            <a href="#about-us" class="page-header__navigation-link link">
+              <svg class="page-header__icon" width="12" height="8">
+                <use xlink:href="img/icons/sprite.svg#arrow"></use>
+              </svg>О нас</a>
           </li>
           <li class="page-header__navigation-item">
-            <a href="#our-products" class="page-header__navigation-link link">Виды велосипедов</a>
+            <a href="#our-products" class="page-header__navigation-link link">
+              <svg class="page-header__icon" width="12" height="8">
+                <use xlink:href="img/icons/sprite.svg#arrow"></use>
+              </svg>Виды велосипедов
+            </a>
           </li>
           <li class="page-header__navigation-item">
-            <a href="#interactive-block" class="page-header__navigation-link link">Видео про велосипеды</a>
+            <a href="#interactive-block" class="page-header__navigation-link link">
+              <svg class="page-header__icon" width="12" height="8">
+                <use xlink:href="img/icons/sprite.svg#arrow"></use>
+              </svg>Видео про велосипеды</a>
           </li>
           <li class="page-header__navigation-item">
-            <a href="#page-footer" class="page-header__navigation-link link">Контакты</a>
+            <a href="#page-footer" class="page-header__navigation-link link">
+              <svg class="page-header__icon" width="12" height="8">
+                <use xlink:href="img/icons/sprite.svg#arrow"></use>
+              </svg>Контакты</a>
           </li>
         </ul>
       </nav>
@@ -38,18 +51,28 @@
       <div class="greetings-block__wrapper">
         <div class="greetings-block__heading-block">
           <a class="greetings-block__logo link" href="#">
-            <img src="img/icons/logo.svg" alt="Наш логотип">
+            <img src="img/icons/logo.svg" width="68" height="21" alt="Наш логотип">
           </a>
           <div class="greetings-block__text-block">
             <h1 class="greetings-block__heading heading">Мы продаем велосипеды</h1>
-            <p class="greetings-block__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+            <p class="greetings-block__text paragraph">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
           </div>
         </div>
         <form class="greetings-block__info-form info-form">
-          <p class="info-form__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-          <input class="info-form__input" type="text" placeholder="Введите Ваше Имя" name="name" required>
-          <input class="info-form__input" type="number" placeholder="Введите Ваш номер телефона" name="tel" required>
-          <a class="info-form__button link" href="#">Подобрать велосипед мечты</a>
+          <div class="info-form__form-text">
+            <p class="info-form__text paragraph">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          </div>
+          <div class="info-form__form-field">
+            <label class="info-form__input-label visually-hidden" for="name">Ваше имя</label>
+            <input class="info-form__input" type="text" placeholder="Введите Ваше Имя" name="name" id="name" required>
+          </div>
+          <div class="info-form__form-field">
+            <label class="info-form__input-label visually-hidden" for="tel">Ваш номер телефона</label>
+            <input class="info-form__input" type="tel" placeholder="Введите Ваш номер телефона" name="tel" id="tel" required>
+          </div>
+          <div class="info-form__submit-button">
+            <button class="info-form__button" type="submit">Подобрать велосипед мечты</button>
+          </div>
         </form>
       </div>
     </section>
@@ -72,10 +95,9 @@
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="img/bicycle1-mobile.webp 1x, img/bicycle1-mobile-2x.webp 2x">
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/bicycle1-tablet.webp 1x, img/bicycle1-tablet-2x.webp 2x">
-              <source type="image/webp" srcset="img/bicycle1.webp 1x, img/bicycle1-2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/bicycle1-mobile.jpg 1x, img/bicycle1-mobile-2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/bicycle1-tablet.jpg 1x, img/bicycle1-tablet-2x.jpg 2x">
-              <img class="our-products__list-item-image" src="img/bicycle1.jpg" srcset="img/bicycle1-2x.jpg 2x" alt="Дорожный велосипед">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/bicycle1.webp 1x, img/bicycle1-2x.webp 2x">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img class="our-products__list-item-image" src="img/bicycle1.jpg" srcset="img/bicycle1-2x.jpg 2x" width="342" height="503" alt="Дорожный велосипед">
             </picture>
             <h3 class="our-products__list-item-heading heading">Дорожный велосипед</h3>
           </li>
@@ -83,10 +105,9 @@
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="img/bicycle2-mobile.webp 1x, img/bicycle2-mobile-2x.webp 2x">
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/bicycle2-tablet.webp 1x, img/bicycle2-tablet-2x.webp 2x">
-              <source type="image/webp" srcset="img/bicycle2.webp 1x, img/bicycle2-2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/bicycle2-mobile.jpg 1x, img/bicycle2-mobile-2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/bicycle2-tablet.jpg 1x, img/bicycle2-tablet-2x.jpg 2x">
-              <img class="our-products__list-item-image" src="img/bicycle2.jpg" srcset="img/bicycle2-2x.jpg 2x" alt="Горный велосипед">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/bicycle2.webp 1x, img/bicycle2-2x.webp 2x">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img class="our-products__list-item-image" src="img/bicycle2.jpg" srcset="img/bicycle2-2x.jpg 2x" width="342" height="566" alt="Горный велосипед">
             </picture>
             <h3 class="our-products__list-item-heading heading">Горный велосипед</h3>
           </li>
@@ -94,10 +115,9 @@
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="img/bicycle3-mobile.webp 1x, img/bicycle3-mobile-2x.webp 2x">
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/bicycle3-tablet.webp 1x, img/bicycle3-tablet-2x.webp 2x">
-              <source type="image/webp" srcset="img/bicycle3.webp 1x, img/bicycle3-2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/bicycle3-mobile.jpg 1x, img/bicycle3-mobile-2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/bicycle3-tablet.jpg 1x, img/bicycle3-tablet-2x.jpg 2x">
-              <img class="our-products__list-item-image" src="img/bicycle3.jpg" srcset="img/bicycle3-2x.jpg 2x" alt="Детский велосипед">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/bicycle3.webp 1x, img/bicycle3-2x.webp 2x">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img class="our-products__list-item-image" src="img/bicycle3.jpg" srcset="img/bicycle3-2x.jpg 2x" width="342" height="512" alt="Детский велосипед">
             </picture>
             <h3 class="our-products__list-item-heading heading">Детский велосипед</h3>
           </li>
@@ -106,23 +126,41 @@
     </section>
     <section class="interactive-block" id="interactive-block">
       <h2 class="interactive-block__heading heading">Видео про велосипеды</h2>
-      <p class="interactive-block__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
-      <div class="interactive-block__video"><span class="visually-hidden">Видео</span></div>
+      <p class="interactive-block__text paragraph">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+      <button class="interactive-block__video">
+        <span class="visually-hidden">Видео</span>
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/clip-picture-mobile.webp 1x, clip-picture-mobile-2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/clip-picture-tablet.webp 1x, clip-picture-tablet-2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/clip-picture.webp 1x, clip-picture-2x.webp 2x">
+          <!-- 1х: 929px; 2x: 1858px -->
+          <img class="interactive-block__video-preview" src="img/clip-picture.jpg" srcset="img/clip-picture-2x.jpg 2x" width="929" height="522" alt="Превью нашего нового ролика">
+        </picture>
+        <svg class="interactive-block__play-icon" width="65" height="65">
+          <use xlink:href="img/icons/sprite.svg#play"></use>
+        </svg>
+      </button>
     </section>
   </main>
   <footer class="page-footer" id="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__text-container">
         <h2 class="page-footer__heading heading">Как нас найти?</h2>
-        <p class="page-footer__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+        <p class="page-footer__text paragraph">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       </div>
       <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.461573368929!2d30.320183571526616!3d59.93861098713157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sbg!4v1634464733769!5m2!1sru!2sbg" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
       <div class="page-footer__contacts">
-        <a class="page-footer__link page-footer__link--email link" href="#">puteshestviemechta@gmail.ru</a>
-        <a class="page-footer__link page-footer__link--tel link" href="#">+7 (499) -784-684-46</a>
+        <a class="page-footer__link page-footer__link--email link" href="puteshestviemechta@gmail.ru">
+          <svg class="page-footer__link-icon" width="26" height="20">
+            <use xlink:href="img/icons/sprite.svg#email"></use>
+          </svg>puteshestviemechta@gmail.ru</a>
+        <a class="page-footer__link page-footer__link--tel link" href="+7(499)-784-684-46">
+          <svg class="page-footer__link-icon" width="26" height="20">
+            <use xlink:href="img/icons/sprite.svg#phone"></use>
+          </svg>+7 (499) -784-684-46</a>
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -74,7 +74,7 @@ gulp.task("svg", function () {
 gulp.task("sprite", function () {
   return gulp.src("source/img/icons/*.svg")
     .pipe(svgstore({inlineSvg: true}))
-    .pipe(rename("sprite_auto.svg"))
+    .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img/icons"));
 });
 

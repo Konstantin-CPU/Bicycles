@@ -26,28 +26,22 @@
   height: 520px;
   transform: translateY(55px);
   margin: 0 auto;
-  background: url("../../img/clip-picture.jpg") 50% no-repeat;
   position: relative;
+  background-color: transparent;
+  border: 0;
 
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 230px;
-    left: 50%;
-    margin-left: -32px;
-    width: 65px;
-    height: 65px;
-    background-image: url("../../img/icons/play.svg");
-    background-position: 50%;
-    background-repeat: no-repeat;
+  &:active {
+    .interactive-block__play-icon {
+      opacity: 0.5;
+    }
   }
 }
 
-@media (min-resolution: 2dppx) {
-  .interactive-block__video {
-    background-image: url("../../img/clip-picture-2x.jpg");
-  }
+.interactive-block__play-icon {
+  position: absolute;
+  top: 230px;
+  margin-left: -32px;
+  left: 50%;
 }
 
 @media (max-width: $tablet-width) {
@@ -68,32 +62,24 @@
     width: 500px;
     height: 280px;
     transform: translateY(40px);
-    background-image: url("../../img/clip-picture-tablet.jpg");
-
-    &::before {
-      top: 95px;
-      margin-left: -45px;
-      width: 90px;
-      height: 90px;
-      background-size: 100%;
-    }
   }
 
-  @media (min-resolution: 2dppx) {
-    .interactive-block__video {
-      background-image: url("../../img/clip-picture-tablet-2x.jpg");
-      background-size: 500px auto;
-    }
+  .interactive-block__play-icon {
+    width: 90px;
+    height: 90px;
+    top: 95px;
+    margin-left: -45px;
+  }
+
+  .interactive-block__video-preview {
+    width: 503px;
+    height: 282px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .interactive-block {
     padding: 86px 15px 5px;
-  }
-
-  .interactive-block__video {
-    transform: translateY(55px);
   }
 
   .interactive-block__text {
@@ -103,20 +89,19 @@
   .interactive-block__video {
     width: 288px;
     height: 160px;
-    background-image: url("../../img/clip-picture-mobile.jpg");
-
-    &::before {
-      top: 50px;
-      margin-left: -32px;
-      width: 65px;
-      height: 65px;
-    }
+    transform: translateY(55px);
+    margin: 0 auto;
   }
 
-  @media (min-resolution: 2dppx) {
-    .interactive-block__video {
-      background-image: url("../../img/clip-picture-mobile-2x.jpg");
-      background-size: 288px auto;
-    }
+  .interactive-block__play-icon {
+    top: 50px;
+    margin-left: -32px;
+    width: 65px;
+    height: 65px;
+  }
+
+  .interactive-block__video-preview {
+    width: 288px;
+    height: 160px;
   }
 }

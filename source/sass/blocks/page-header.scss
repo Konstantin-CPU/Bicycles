@@ -22,8 +22,15 @@
   font-size: 16px;
   line-height: 32px;
   color: $white-07;
+
+  &:hover {
+    color: $white;
+  }
 }
 
+.page-header__icon {
+  display: none;
+}
 
 .page-header__toggle {
   display: none;
@@ -39,6 +46,10 @@
     background-color: $green;
     border: 0;
     display: block;
+
+    &:hover {
+      opacity: 0.6;
+    }
 
     &::before,
     &::after {
@@ -65,6 +76,13 @@
       top: 0;
       right: 0;
 
+      .page-header__icon {
+        display: block;
+        top: 23px;
+        right: 25px;
+        position: absolute;
+      }
+
       .page-header__navigation-list {
         width: 320px;
         min-height: 568px;
@@ -88,14 +106,12 @@
         margin-bottom: 30px;
         position: relative;
 
-        &::before {
-          content: "";
-          position: absolute;
-          width: 13px;
-          height: 8px;
-          top: 23px;
-          right: 25px;
-          background: url("../../img/icons/arrow.svg") no-repeat 50%;
+        &:hover {
+          background-color: $fifth-grey;
+        }
+
+        &:active {
+          background-color: $sixth-grey;
         }
       }
 

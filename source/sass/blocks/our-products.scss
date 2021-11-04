@@ -86,6 +86,8 @@
 
 .our-products__list-item-image {
   margin-bottom: 20px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .our-products__list-item-heading {
@@ -143,6 +145,8 @@
 
   .our-products__list-item-image {
     margin-bottom: 15px;
+    width: 270px;
+    height: 300px;
   }
 }
 
