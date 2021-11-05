@@ -127,19 +127,22 @@
     <section class="interactive-block" id="interactive-block">
       <h2 class="interactive-block__heading heading">Видео про велосипеды</h2>
       <p class="interactive-block__text paragraph">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
-      <button class="interactive-block__video">
+      <div class="interactive-block__video">
         <span class="visually-hidden">Видео</span>
         <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/clip-picture-mobile.webp 1x, clip-picture-mobile-2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1023px)" srcset="img/clip-picture-tablet.webp 1x, clip-picture-tablet-2x.webp 2x">
-          <source type="image/webp" media="(min-width: 1024px)" srcset="img/clip-picture.webp 1x, clip-picture-2x.webp 2x">
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/clip-picture-mobile.webp 1x, img/clip-picture-mobile-2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/clip-picture-tablet.webp 1x, img/clip-picture-tablet-2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/clip-picture.webp 1x, img/clip-picture-2x.webp 2x">
           <!-- 1х: 929px; 2x: 1858px -->
           <img class="interactive-block__video-preview" src="img/clip-picture.jpg" srcset="img/clip-picture-2x.jpg 2x" width="929" height="522" alt="Превью нашего нового ролика">
         </picture>
-        <svg class="interactive-block__play-icon" width="65" height="65">
-          <use xlink:href="img/icons/sprite.svg#play"></use>
-        </svg>
-      </button>
+        <button class="interactive-block__play-button">
+          <span class="visually-hidden">Запустить видео</span>
+          <svg class="interactive-block__play-icon" width="65" height="65">
+            <use xlink:href="img/icons/sprite.svg#play"></use>
+          </svg>
+        </button>
+      </div>
     </section>
   </main>
   <footer class="page-footer" id="page-footer">
@@ -150,11 +153,11 @@
       </div>
       <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.461573368929!2d30.320183571526616!3d59.93861098713157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sbg!4v1634464733769!5m2!1sru!2sbg" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
       <div class="page-footer__contacts">
-        <a class="page-footer__link page-footer__link--email link" href="puteshestviemechta@gmail.ru">
+        <a class="page-footer__link page-footer__link--email link" href="mailto:puteshestviemechta@gmail.ru">
           <svg class="page-footer__link-icon" width="26" height="20">
             <use xlink:href="img/icons/sprite.svg#email"></use>
           </svg>puteshestviemechta@gmail.ru</a>
-        <a class="page-footer__link page-footer__link--tel link" href="+7(499)-784-684-46">
+        <a class="page-footer__link page-footer__link--tel link" href="tel:+749978468446">
           <svg class="page-footer__link-icon" width="26" height="20">
             <use xlink:href="img/icons/sprite.svg#phone"></use>
           </svg>+7 (499) -784-684-46</a>
