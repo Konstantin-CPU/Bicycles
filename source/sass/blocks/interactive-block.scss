@@ -30,19 +30,28 @@
   background-color: transparent;
   border: 0;
 
-  &:active,
   &:hover {
+    .interactive-block__play-icon {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
     .interactive-block__play-icon {
       opacity: 0.5;
     }
   }
 }
 
-.interactive-block__play-icon {
+.interactive-block__play-button {
   position: absolute;
   top: 230px;
-  margin-left: -32px;
+  margin-left: -36px;
   left: 50%;
+  background-color: transparent;
+  border: 0;
+  width: 65px;
+  height: 65px;
 }
 
 @media (max-width: $tablet-width) {
@@ -65,11 +74,14 @@
     transform: translateY(40px);
   }
 
+  .interactive-block__play-button {
+    top: 95px;
+    margin-left: -45px;
+  }
+
   .interactive-block__play-icon {
     width: 90px;
     height: 90px;
-    top: 95px;
-    margin-left: -45px;
   }
 
   .interactive-block__video-preview {
@@ -94,9 +106,14 @@
     margin: 0 auto;
   }
 
+  .interactive-block__play-button {
+    top: 45px;
+    margin-left: -38px;
+    width: 65px;
+    height: 65px;
+  }
+
   .interactive-block__play-icon {
-    top: 50px;
-    margin-left: -32px;
     width: 65px;
     height: 65px;
   }
