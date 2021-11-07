@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
+  background-color: $black;
 }
 
 @media (min-resolution: 2dppx) {
@@ -24,7 +25,7 @@
 }
 
 .greetings-block__logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 25px;
 }
 

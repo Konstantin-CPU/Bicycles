@@ -23,7 +23,8 @@
   line-height: 32px;
   color: $white-07;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $white;
   }
 }
@@ -72,9 +73,21 @@
     }
 
     &--opened {
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
+      z-index: 1000;
+
+      &::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 1000%;
+        height: 1000%;
+        background-color: $grey;
+        z-index: -1;
+      }
 
       .page-header__icon {
         display: block;
@@ -106,7 +119,8 @@
         margin-bottom: 30px;
         position: relative;
 
-        &:hover {
+        &:hover,
+        &:focus {
           background-color: $fifth-grey;
         }
 

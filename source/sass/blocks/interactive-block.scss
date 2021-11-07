@@ -31,13 +31,13 @@
   border: 0;
 
   &:hover {
-    .interactive-block__play-icon {
+    .interactive-block__play-button {
       opacity: 0.8;
     }
   }
 
   &:active {
-    .interactive-block__play-icon {
+    .interactive-block__play-button {
       opacity: 0.5;
     }
   }
@@ -52,6 +52,12 @@
   border: 0;
   width: 65px;
   height: 65px;
+  cursor: pointer;
+  outline: none;
+
+  &:focus {
+    opacity: 0.8;
+  }
 }
 
 @media (max-width: $tablet-width) {

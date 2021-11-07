@@ -23,7 +23,8 @@
     color: $second-black-05;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     outline: 2px solid $green;
   }
 }
@@ -39,8 +40,10 @@
   border: 0;
   width: 100%;
   border-radius: 6px;
+  cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     font-size: 20px;
   }
 

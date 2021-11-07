@@ -4,3 +4,7 @@
   font-weight: normal;
   scroll-behavior: smooth;
 }
+
+.page__body--scroll-disabled {
+  overflow: hidden;
+}

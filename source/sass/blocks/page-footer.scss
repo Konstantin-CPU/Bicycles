@@ -43,7 +43,8 @@
   padding-left: 40px;
   position: relative;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $black;
   }
 
