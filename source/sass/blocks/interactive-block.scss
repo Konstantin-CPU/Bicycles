@@ -23,7 +23,7 @@
 
 .interactive-block__video {
   width: 930px;
-  height: 520px;
+  height: 480px;
   transform: translateY(55px);
   margin: 0 auto;
   position: relative;
@@ -76,7 +76,7 @@
 
   .interactive-block__video {
     width: 500px;
-    height: 280px;
+    height: 235px;
     transform: translateY(40px);
   }
 
@@ -106,7 +106,8 @@
   }
 
   .interactive-block__video {
-    width: 288px;
+    min-width: 288px;
+    width: auto;
     height: 160px;
     transform: translateY(55px);
     margin: 0 auto;
@@ -125,7 +126,8 @@
   }
 
   .interactive-block__video-preview {
-    width: 288px;
+    width: 100%;
     height: 160px;
+    object-fit: cover;
   }
 }
