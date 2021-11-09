@@ -13,6 +13,7 @@
 .page-header__navigation-list {
   border-bottom: 1px solid $white-07;
   display: flex;
+  overflow-x: scroll;
   justify-content: space-between;
   padding: 20px 15px 10px;
 }
@@ -27,6 +28,10 @@
   &:focus {
     color: $white;
   }
+}
+
+.page-header__navigation-item {
+  margin-right: 10px;
 }
 
 .page-header__icon {
@@ -98,12 +103,14 @@
 
       .page-header__navigation-list {
         width: 320px;
-        min-height: 568px;
+        height: 568px;
         background-color: $white;
         flex-direction: column;
+        flex-wrap: nowrap;
         justify-content: start;
         border: none;
         padding: 100px 0 0;
+        overflow-y: scroll;
       }
 
       .page-header__navigation-item {
