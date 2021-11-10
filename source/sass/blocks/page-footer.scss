@@ -67,19 +67,13 @@
   }
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 1150px) {
   .page-footer__link {
-    margin-right: 45px;
+    font-size: 14px;
 
     &:not(:last-child) {
-      margin: 0 45px 10px 0;
+      margin-right: 45px;
     }
-  }
-}
-
-@media (max-width: 1040px) {
-  .page-footer__link {
-    font-size: 1.5vw;
   }
 }
 

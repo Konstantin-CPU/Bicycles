@@ -54,6 +54,7 @@
   height: 65px;
   cursor: pointer;
   outline: none;
+  padding: 0;
 
   &:focus {
     opacity: 0.8;
@@ -83,6 +84,8 @@
   .interactive-block__play-button {
     top: 95px;
     margin-left: -45px;
+    width: 90px;
+    height: 90px;
   }
 
   .interactive-block__play-icon {

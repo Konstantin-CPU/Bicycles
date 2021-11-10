@@ -24,15 +24,15 @@
 }
 
 .about-us__list-item {
-  width: 263px;
+  width: 22.5%;
   font-size: 22px;
   line-height: 34px;
   padding-top: 50px;
   position: relative;
   margin-bottom: 20px;
 
-  &:not(:last-child) {
-    margin-right: 38px;
+  &:not(:nth-child(4n)) {
+    margin-right: 37px;
   }
 
   &::before {
@@ -50,10 +50,13 @@
   }
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1400px) {
   .about-us__list-item {
-    width: 180px;
-    font-size: 18px;
+    font-size: 17px;
+
+    &:not(:nth-child(4n)) {
+      margin-right: 15px;
+    }
   }
 }
 
@@ -64,10 +67,6 @@
 
   .about-us__list {
     justify-content: center;
-  }
-
-  .about-us__list-item:not(:nth-child(2n)) {
-    margin-right: 30px;
   }
 
   .about-us__wrapper {
@@ -84,7 +83,15 @@
     padding-top: 55px;
     margin-bottom: 40px;
     font-size: 22px;
-    width: 263px;
+    width: 46%;
+
+    &:not(:nth-child(4n)) {
+      margin-right: 0;
+    }
+
+    &:nth-child(2n-1) {
+      margin-right: 30px;
+    }
   }
 }
 
