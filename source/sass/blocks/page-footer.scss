@@ -104,12 +104,16 @@
   }
 
   .page-footer__map {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
 
   .page-footer__link {
     font-size: 16px;
     line-height: 22px;
+
+    &:not(:last-child) {
+      margin-right: 90px;
+    }
   }
 }
 
