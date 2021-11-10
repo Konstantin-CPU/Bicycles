@@ -13,7 +13,7 @@
 .page-header__navigation-list {
   border-bottom: 1px solid $white-07;
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
   justify-content: space-between;
   padding: 20px 15px 10px;
 }
