@@ -67,6 +67,16 @@
   }
 }
 
+@media (max-width: 1130px) {
+  .page-footer__link {
+    margin-right: 45px;
+
+    &:not(:last-child) {
+      margin: 0 45px 10px 0;
+    }
+  }
+}
+
 @media (max-width: 1040px) {
   .page-footer__link {
     font-size: 1.5vw;
